@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" href="css/media.css" media="screen and (max-width:1280px)">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="css/media.css">
+
+	<script type="text/javascript" src="//vk.com/js/api/openapi.js?137"></script>
+	<title>SlimTire</title>
+</head>
+<body class="Site">
+	<header>
+		<div class="header-content clearfix">
+			<div class="logo">
+				<a href="#"><span>Slim</span>Tire</a>
+				<p>38 (094) 123 12 32 <br/> 38 (094) 123 12 32</p>
+			</div>
+			<form action="" method="post">
+				<input type="search" name="q" class="search"> 
+			</form>
+			<div class="shopping">
+				<a href=""><img src="images/icon_card.png"></a>
+				<p><span>15000 грн</span><br/><a href="">8 товаров</a></p>
+			</div>
+			<nav>
+				<ul class="nav-menu">
+					<li><img src="images/icon_menu_0.png"><a href="">Летняя резина</a></li>
+					<li><img src="images/icon_menu_1.png"><a href="">Зимняя резина</a></li>
+					<li><img src="images/icon_menu_2.png"><a href="">Мото-резина</a></li>
+					<li><img src="images/icon_menu_3.png"><a href="">Диски</a></li>
+				</ul>	
+			</nav>
+		</div>
+	</header>
+	<div class="container">
+		<ul class="nav-bar">
+			<li><a href="#">Главная</a></li>
+			<li>Зимние шины</li>
+		</ul>
+		<div class="col-md-3" id="filters">
+			<h2>Характеристики</h2>
+			<div class="btn-group">
+				<h3>Ширина</h3>
+				<button type="button" class="btn btn-default" id="butn">195</button>
+				<button type="button" data-toggle="dropdown" class="btn btn-default dropdown-toggle" id="butn2"><span class="caret"></span></button>
+				<ul class="dropdown-menu">
+					<li><a href="#">Пункт 1</a></li>
+					<li><a href="#">Пункт 2</a></li>
+					<li><a href="#">Пункт 3</a></li>
+				</ul>
+			</div>
+
+			<div class="btn-group">
+				<h3>Профиль</h3>
+				<button type="button" class="btn btn-default" id="butn">65</button>
+				<button type="button" data-toggle="dropdown" class="btn btn-default dropdown-toggle" id="butn2"><span class="caret"></span></button>
+				<ul class="dropdown-menu">
+					<li><a href="#">Пункт 1</a></li>
+					<li><a href="#">Пункт 2</a></li>
+					<li><a href="#">Пункт 3</a></li>
+				</ul>
+			</div>
+
+			<div class="btn-group">
+				<h3>Диаметр</h3>
+				<button type="button" class="btn btn-default" id="butn">65</button>
+				<button type="button" data-toggle="dropdown" class="btn btn-default dropdown-toggle" id="butn2"><span class="caret"></span></button>
+				<ul class="dropdown-menu">
+					<li><a href="#">Пункт 1</a></li>
+					<li><a href="#">Пункт 2</a></li>
+					<li><a href="#">Пункт 3</a></li>
+				</ul>
+			</div>
+
+			<div class="btn-group">
+				<h3>DIA</h3>
+				<button type="button" class="btn btn-default" id="butn">65</button>
+				<button type="button" data-toggle="dropdown" class="btn btn-default dropdown-toggle" id="butn2"><span class="caret"></span></button>
+				<ul class="dropdown-menu">
+					<li><a href="#">Пункт 1</a></li>
+					<li><a href="#">Пункт 2</a></li>
+					<li><a href="#">Пункт 3</a></li>
+				</ul>
+			</div>
+
+			<div class="btn-group">
+				<h3>PCD</h3>
+				<button type="button" class="btn btn-default" id="butn">65</button>
+				<button type="button" data-toggle="dropdown" class="btn btn-default dropdown-toggle" id="butn2"><span class="caret"></span></button>
+				<ul class="dropdown-menu">
+					<li><a href="#">Пункт 1</a></li>
+					<li><a href="#">Пункт 2</a></li>
+					<li><a href="#">Пункт 3</a></li>
+				</ul>
+			</div>
+
+			<div class="btn-group">
+				<h3>Бренд</h3>
+				<button type="button" class="btn btn-default dropdown-toggle" id="butn" >65</button>
+				<button type="button" data-toggle="dropdown" class="btn btn-default dropdown-toggle" id="butn2"><span class="caret"></span></button>
+				<ul class="dropdown-menu">
+					<li><a href="#">Пункт 1</a></li>
+					<li><a href="#">Пункт 2</a></li>
+					<li><a href="#">Пункт 3</a></li>
+				</ul>
+			</div>
+			<div class="formSum" role="search">
+				<h3>Цены</h3>
+				<div class="form-group">
+					<label class="form-summ"><span>От</span><input type="text" class="form-control" placeholder="1200">
+						<span>До</span><input type="text" class="form-control" placeholder="1200"></label>
+					</div>
+				</div>
+
+			</div>
+			<div class="col-md-9">
+				<h2>Зимние шины: <a href="#" class = "choose-sum"> Сначала дешевые</a> <a href="#" class = "choose-sum"> Сначала дешевые</a> </h2>
+				<div class="masonry">
+					<div class="item">
+						<img src="images/image.jpg" alt="">
+						<br><span>Premiorri ViaMaggiore <br> 195/65 R15 91T</span>
+						<span class="summPrice">900 грн</span><a href="#" class="pull-right"><img src="images/icon_card.png" alt="" >В корзину</a>
+					</div>
+					<div class="item">
+						<img src="images/image.jpg" alt="">
+						<br><span>Premiorri ViaMaggiore <br> 195/65 R15 91T</span>
+						<span class="summPrice">900 грн</span><a href="#" class="pull-right"><img src="images/icon_card.png" alt="" >В корзину</a>
+					</div>
+					<div class="item">
+						<img src="images/image.jpg" alt="">
+						<br><span>Premiorri ViaMaggiore <br> 195/65 R15 91T</span>
+						<span class="summPrice">900 грн</span><a href="#" class="pull-right"><img src="images/icon_card.png" alt="" >В корзину</a>
+					</div>
+					<div class="item">
+						<img src="images/image.jpg" alt="">
+						<br><span>Premiorri ViaMaggiore <br> 195/65 R15 91T</span>
+						<span class="summPrice">900 грн</span><a href="#" class="pull-right"><img src="images/icon_card.png" alt="" >В корзину</a>
+					</div>
+					<div class="item">
+						<img src="images/image.jpg" alt="">
+						<br><span>Premiorri ViaMaggiore <br> 195/65 R15 91T</span>
+						<span class="summPrice">900 грн</span><a href="#" class="pull-right"><img src="images/icon_card.png" alt="" >В корзину</a>
+					</div>
+					<div class="item">
+						<img src="images/image.jpg" alt="">
+						<br><span>Premiorri ViaMaggiore <br> 195/65 R15 91T</span>
+						<span class="summPrice">900 грн</span><a href="#" class="pull-right"><img src="images/icon_card.png" alt="" >В корзину</a>
+					</div>
+				</div>	
+
+
+			</div>
+			<div class="arrows"><a href="#"><i class="fa fa-arrow-left" aria-hidden="true"></i></a><span> 1/12 </span><a href="#"><i class="fa fa-arrow-right" aria-hidden="true"></i></a></div>
+		</div>
+	</div>
+</div>
+<hr>
+
+<div class="container" id="priceSale">
+	<h2>Просмотренные товары:  <a href="#" class = "choose-sum"> Шины </a> <a href="#" class = "choose-sum"> Диски </a> <a href="#" class = "choose-sum"> Все товары</a></h2>	<div class="arrows pull-right"><a href="#"><i class="fa fa-arrow-left" aria-hidden="true"></i></a><span> 1/12 </span><a href="#"><i class="fa fa-arrow-right" aria-hidden="true"></i></a></div>
+	<div class="masonry2">
+		<div class="item2">
+			<img src="images/image.jpg" alt="">
+
+			<div class="sales">
+				<p>Premiorri<br> ViaMaggiore</p><span class="sale">-40%</span><p class="saleName">Наличие: &emsp;&emsp;<span class="colorSale">Мало</span></p><p class="saleName">Cезон: &emsp;&emsp;<span class="colorName">Летние</span></p></p><p class="saleName">Профиль: &emsp;<span class="colorName">55</span></p>	<p class="saleName">Диаметр: &emsp;<span class="colorName">R16</span></p></div>
+				<span class="summPrice"></span>
+
+				<a href="#" class="pull-right"><img src="images/icon_card.png" alt="" >В корзину</a>
+			</div>
+			<div class="item2">
+				<img src="images/image.jpg" alt="">
+
+				<div class="sales">
+					<p>Premiorri<br> ViaMaggiore</p><span class="sale">-40%</span><p class="saleName">Наличие: &emsp;&emsp;<span class="colorSale">Мало</span></p><p class="saleName">Cезон: &emsp;&emsp;<span class="colorName">Летние</span></p></p><p class="saleName">Профиль: &emsp;<span class="colorName">55</span></p>	<p class="saleName">Диаметр: &emsp;<span class="colorName">R16</span></p></div>
+					<span class="summPrice"></span>
+					<a href="#" class="pull-right"><img src="images/icon_card.png" alt="" >В корзину</a>
+				</div>
+
+				<div class="item2">
+					<img src="images/image.jpg" alt="">
+
+					<div class="sales">
+						<p>Premiorri<br> ViaMaggiore</p><span class="sale">-40%</span><p class="saleName">Наличие: &emsp;&emsp;<span class="colorSale">Мало</span></p><p class="saleName">Cезон: &emsp;&emsp;<span class="colorName">Летние</span></p></p><p class="saleName">Профиль: &emsp;<span class="colorName">55</span></p>	<p class="saleName">Диаметр: &emsp;<span class="colorName">R16</span></p></div>
+						<span class="summPrice"></span>
+						<a href="#" class="pull-right"><img src="images/icon_card.png" alt="" >В корзину</a>
+					</div></div>
+				</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+				<footer>
+					<div class="content">
+						<div class="logo-footer"><p><span>Slim</span>Tire</p><span>@2016 SlimTire</span></div>
+						<div class="menu-content">
+							<div class="info"><span>38 (094) 123 12 32 <br/> 38 (094) 123 12 32</span><p>info@slimtire.com</p></div>
+							<div class="social">
+								<a href="https://twitter.com/?lang=ru" target="_blank" class="a"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+								<a href="https://www.facebook.com/" target="_blank"  class="b"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+								<a href="" target="_blank"  class="c"><i class="fa fa-vk" aria-hidden="true"></i></a>
+							</div>
+							<div class="location-info">
+								<span>г.Харьков<br/> пр.Гагарина 1</span></div>
+
+								<nav>
+									<ul class="nav-footer">
+										<li><a href="">Условия поддержки</a></li>
+										<li><a href="">Возврат</a></li>
+										<li><a href="">Доставка и оплата</a></li>
+										<li><a href="">Подарочный сертифика</a></li>
+										<li><a href="">Контакты</a></li>
+									</ul>
+								</nav>
+							</div>
+						</div>
+					</footer>
+					<!-- VK Widget -->
+					<div id="vk_community_messages"></div>
+					<script type="text/javascript">
+						VK.Widgets.CommunityMessages("vk_community_messages", 137847973, {expandTimeout: "5000",tooltipButtonText: "Есть вопрос?"});
+					</script>
+
+					<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+					<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+					<script src="js/code.js"></script>
+					<script src="js/salvattore.min.js"></script>
+				</body>
+				</html>

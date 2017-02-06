@@ -1,0 +1,14 @@
+img {
+	max-width: 100%;
+}
+
+/*.tab-content .tab-pane {*/
+.nav.nav-tabs {
+	margin-bottom: 15px;
+}
+
+.actions {
+	position: absolute;
+	right: 15px;
+	top: 11px;
+}

@@ -1,0 +1,4 @@
+$(function(){
+	myTooltip("a","tooltip");
+});
+

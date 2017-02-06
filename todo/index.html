@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/index.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="page-header">
+			<h1>Example page header <small>Subtext for header</small></h1>
+		</div>
+
+		<div class="clearfix">
+			<a href="#" class="btn btn-primary pull-right" data-toggle="modal" data-target="#formAddTask"><span class="glyphicon glyphicon-plus"></span> Add new task</a>
+		</div>
+
+		<!-- Nav tabs -->
+		<ul class="nav nav-tabs" role="tablist">
+			<li class="nav-item active">
+				<a class="nav-link" data-toggle="tab" href="#todo" role="tab">ToDo</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" data-toggle="tab" href="#progress" role="tab">In progress</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" data-toggle="tab" href="#done" role="tab">Done</a>
+			</li>
+		</ul>
+
+		<div class="row">
+			<div class="col-md-8">
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div class="tab-pane active" id="todo" data-status="1" role="tabpanel">
+						<ul class="list-group">
+						</ul>
+					</div>
+					<div class="tab-pane" id="progress" data-status="2" role="tabpanel">
+						<ul class="list-group"></ul>
+					</div>
+					<div class="tab-pane" id="done" data-status="3" role="tabpanel">
+						<ul class="list-group"></ul>
+					</div>
+				</div>
+			</div>
+			<aside>
+			<div class="col-md-4">
+				<div class="panel panel-danger">
+					<div class="panel-heading">Should be done</div>
+					<div class="panel-body">Tasks count: <span class="badge">0</span></div>
+				</div>
+
+				<div class="panel panel-warning">
+					<div class="panel-heading">Will be done soon</div>
+					<div class="panel-body">Tasks count: <span class="badge">0</span></div>
+				</div>
+
+				<div class="panel panel-success">
+					<div class="panel-heading">Already done</div>
+					<div class="panel-body">Tasks count: <span class="badge">0</span></div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	</aside>
+
+	<!-- Modal -->
+	<div class="modal fade" id="formAddTask" tabindex="-1" role="dialog" aria-labelledby="formAddTaskTitle" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="formAddTaskTitle">Add task</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<form>
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder="Title" id="add-task-title" name="title">
+						</div>
+						<div class="form-group">
+							<textarea rows="10" class="form-control" placeholder="Description" id="add-task-description" name="description"></textarea>
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+					<button type="button" class="btn btn-success" id="add-task-btn">Save</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="formEditTask" tabindex="-1" role="dialog" aria-labelledby="formEditTaskTitle" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="formEditTaskTitle">Edit task</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<form>
+						<input type="hidden" id="edit-task-id">
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder="Title" id="edit-task-title" name="title">
+						</div>
+						<div class="form-group">
+							<textarea rows="10" class="form-control" placeholder="Description" id="edit-task-description" name="description"></textarea>
+						</div>
+						<div class="form-group">
+							<select id="edit-task-status" class="form-control">
+								<option value="1">to do</option>
+								<option value="2">in progress</option>
+								<option value="3">done</option>
+							</select>
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+					<button type="button" class="btn btn-success" id="edit-task-btn">Save</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
